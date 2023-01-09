@@ -160,14 +160,13 @@ function selectionSobremesa0(botaoClicado2) {
 
 function selectionPedidoFinal(){
 
-
-    document.getElementById("btn-pedido").style.background = "#32B72F";
-    document.getElementById("btn-pedido").style.fontSize = "59px";
     
     if(comida !== undefined && bebida !== undefined && sobremesa !== undefined ){
-          
+        
+        
        document.getElementById("btn-pedido").removeAttribute("disabled");
        document.getElementById("btn-pedido").innerHTML = "Fechar Pedido";
+       document.getElementById("btn-pedido").style.LineBorder = "15px";
        document.getElementById("btn-pedido").style.color = "#FFFFFF";
        document.getElementById("btn-pedido").style.fontStyle = "bold";
        document.getElementById("btn-pedido").style.background = "#32B72F";
